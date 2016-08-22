@@ -39,4 +39,12 @@ urlpatterns = [
     url(r'^module/(?P<module_id>\d+)/$',
         views.ModuleContentListView.as_view(),
         name='module_content_list'),
+    # Order modules
+    url(r'^module/order/$',
+        views.ModuleOrderView.as_view(),
+        name='module_order'),
+    # Order content
+    url(r'^content/order/$',
+        views.ContentOrderView.as_view(),
+        name='content_order'),
 ]
