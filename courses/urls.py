@@ -47,4 +47,12 @@ urlpatterns = [
     url(r'^content/order/$',
         views.ContentOrderView.as_view(),
         name='content_order'),
+    # Show course list by subject
+    url(r'^subject/(?P<subject>[\w-]+)/$',
+        views.CourseListView.as_view(),
+        name='course_list_subject'),
+    # Show course detail view
+    url(r'^(?P<slug>[\w-]+)/$',
+        views.CourseDetailView.as_view(),
+        name='course_detail'), 
 ]
