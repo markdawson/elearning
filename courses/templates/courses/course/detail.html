@@ -13,10 +13,9 @@
                 <h2>Overview</h2>
                 <p>
                     <a href="{% url "course_list_subject" subject.slug %}">
-                        {{ subject.title }}
-                    </a>.
+                        {{ subject.title }}</a>.
                     {{ course.modules.count }} modules.
-                    Instuctor: {{ course.owner.get_full_name }}
+                    Instructor: {{ course.owner.get_full_name }}
                 </p>
                 {{ object.overview|linebreaks }}
                 {% if request.user.is_authenticated %}
