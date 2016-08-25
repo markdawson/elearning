@@ -6,3 +6,4 @@ whitenoise==3.2
 Pillow
 django-braces
 django-embed-video==1.0.0
+djangorestframework==3.2.3

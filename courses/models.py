@@ -67,8 +67,8 @@ class ItemBase(models.Model):
 
     def render(self):
         return render_to_string('courses/content/{}.html'\
-                                .format(self._meta.model_name),
-                                {'item': self})
+                .format(self._meta.model_name),
+                {'item': self})
 
     class Meta:
         abstract = True
